@@ -1,0 +1,11 @@
+@media screen{}
+@media screen and (max-width: 600px) { /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+   .img-responsive{min-width: 50px;min-height: 50px}
+}
+@media only screen and (min-width: 600px) and (max-width: 800px){
+    .img-responsive{min-width: 50px;min-height: 50px;
+        max-width: 100px;max-height: 100px}
+}
+@media screen and (max-width: 200px) { /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+    .img-responsive{min-width: 50px;min-height: 50px}
+}
