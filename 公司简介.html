@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>乐意</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="script/bootstrap.min.css" rel="stylesheet">
+    <script src="script/jquery.min.js"></script>
+    <script src="script/bootstrap.min.js"></script>
+    <style class="text/css">
+        .dropdown-menu{
+            min-width: 100px;
+        }
+        .carousel-inner .item img,.img-responsive{width:900px;height:350px;border: 10px;}
+        .navbar-collapse{padding-left:180px; height:130px;}
+        .container>.navbar-collapse{margin-left: 60px;}
+        ul li:hover ul{ display:block;}
+
+        .navbar-inverse{background-color:#adadeb;border: none; color: white;font-weight: bolder;}
+        body{background-color: #eeeeee; background-size: cover; background-repeat: no-repeat;background-attachment: scroll;}
+
+        h3 {border-left:4px solid #7070db;margin-bottom: 0px;text-shadow:3px 3px #e5e5ff;font-weight: 700;height:26px; margin-top: 32px}
+        .sp{ margin-left:10px;font-size: 12px;}
+        .thumbnail>img{width: 200px;height: 260px}
+        .carousel-inner .item img{width: 1162px;}
+        .col-sm-3 {  width: 25%;margin-top: 5px;  }
+        .btn-group>.btn:first-child {  margin-left: 65px;  }
+        .sm{color: #5d5d5d;border-left: 1px solid #8585e0;margin-top: 0px;margin-left: 10px;}
+        .pt{width: 180px;height: 160px;}
+        .nav-pills>li>a{background-color: #ddccff;height: 30px;}
+        .dropdown-menu {  margin-left: 110px;  margin-top: -24px;  }
+        .row {  margin-top: -2px;  margin-left: -11px;  }
+        @media screen {  img{  width: 100%;  }  }
+        hr{border-top-color: #8585e0; margin-top: 70px;margin-bottom: 35px; border-top-width: 8px;}
+        .image-container {  width: 100%;  overflow: hidden;  }
+        .image-container img {  width: 100%;  }
+        p{margin: 0 0 0}
+        @-moz-document url-prefix() { fieldset { display: table-cell; } }
+
+
+    </style>
+    <script>
+        $('.dropdown-toggle').mouseleave(
+                function(){
+                    $('.dropdown-menu').slideUp();
+                });
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="image-container">
+            <img src="images/logo3.jpg"  style="max-width: 70%">
+        </div>
+    </div>
+</div>
+<nav class="navbar navbar-inverse" role="navigation">
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="container">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+        <ul class="nav navbar-nav">
+            <li><a class="navbar-brand" href="index.html" style="color: white">公司主页</a></li>
+            <li><a class="navbar-brand" href="关于我们.html" style="color: white">关于我们</a></li>
+            <li><a class="navbar-brand" href="secondary.html" style="color: white">产品展示</a></li>
+            <li><a class="navbar-brand" href="公司简介.html" style="color: white">公司简介</a></li>
+            <li><a class="navbar-brand" href="联系我们.html" style="color: white">联系我们</a></li>
+        </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+</nav>
+
+<div class="container" style="background-color: white">
+    <div class="row">
+        <div id="myCarousel" class="carousel slide">
+            <!-- 轮播（Carousel）指标 -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+            <!-- 轮播（Carousel）项目 -->
+
+            <div class="carousel-inner">
+                <div class="item">
+                    <img src="imgs/硅胶餐具/191.jpg" alt="First slide">
+                    <div class="carousel-caption">硅胶餐具</div>
+                </div>
+                <div class="item active">
+                    <img src="imgs/1.jpg"  alt="Third slide">
+                    <div class="carousel-caption">办公区域</div>
+                </div>
+                <div class="item">
+                    <img src="images/4.jpg" alt="Second slide">
+                    <div class="carousel-caption">硅胶条</div>
+                </div>
+                <div class="item">
+                    <img src="images/5.jpg" alt="Third slide">
+                    <div class="carousel-caption">车间环境</div>
+                </div>
+            </div>
+            <!-- 轮播（Carousel）导航 -->
+            <a class="carousel-control left" href="#myCarousel"
+               data-slide="prev">&lsaquo;</a>
+            <a class="carousel-control right" href="#myCarousel"
+               data-slide="next">&rsaquo;</a>
+        </div>
+        <div class="col-sm-3" style="margin-top: 30px">
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a href="公司简介.html">公司简介</a></li>
+                <li class="active"><a href="关于我们.html">关于我们</a></li>
+                <li class="active"><a href="联系我们.html">联系我们</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-9">
+            <h3 ><span style=" margin-left:10px; ">乐意硅橡胶有限公司</span>
+                <span class="sp" style=" margin-left: 280px">当前位置：<a class="sm" href="index.html" style="color: #5d5d5d">公司首页</a></span>
+                <span class="sp"><a class="sm" href="third.html">公司简介</a></span>
+            </h3><br/>
+            <h2> <strong>公司介绍</strong> </h2><br/>
+            <p> 深圳市乐意硅橡胶制品有限公司是开发和生产硅胶制品于一体的专业厂商。现拥有现代化的成套生产设备和精湛的职工队伍，年生产能力50吨橡硅胶制品。
+                公司根据客户的不同需要，采用符合环保的硅胶为客户作各种硅胶制品类的研发，合成，生产，销售，目前主要产品类型有：<br/>
+                <strong>硅胶板：</strong>主要有发泡硅胶板，进口硅胶板，食品级硅胶板，阻燃硅胶板，防静电硅胶板，<br/><br/>
+                <strong>硅胶管：</strong>主要有医用硅胶管，气相硅胶管，铂金硅胶管，医疗级硅胶管，食品级硅胶管，阻燃硅胶管，耐高温硅胶管，导电硅胶管，防静电硅胶管等。<br/><br/>
+                <strong> LED硅胶套管：</strong>主要有LED灯条硅胶套管，led灯带硅胶套管，led硅胶U型半套管，常规规格适合套8-12MM宽的板，并配有相应的堵塞和卡座，特殊规格可以定做。<br/><br/>
+                <strong>发泡硅胶制品：</strong>主要有发泡硅胶条，发泡硅胶管，发泡硅胶片、发泡硅胶垫，发泡硅胶圈等产品。<br/><br/>
+                <strong>硅胶密封圈：</strong>主要有饭盒硅胶密封圈、保鲜盒硅胶密封圈、保温杯硅胶密封圈、电压力锅硅胶密封圈、高压锅硅胶密封圈、电饭煲硅胶密封圈, 保温箱耐高温密封圈，粘接口柔软、牢固。<br/><br/>
+                <strong>硅胶密封条：</strong>各种硅胶挤出条，硅胶异型条，硅胶实心条，门窗密封条等。<br/><br/>
+                <strong>硅胶模压杂件：</strong>各种显示屏密封圈，其它异型密封圈，异型件等；<br/><br/>
+                <strong>硅胶餐具：</strong>主要有硅胶碗，硅胶筷子，硅胶勺子，硅胶刷子，硅胶餐垫，硅胶水杯，<br/><br/>
+                <strong>硅胶垫：</strong>主要有硅胶垫片，阻燃硅胶垫，硅胶脚垫，<br/><br/>
+                本公司一直秉持“顾客至上、品质第一、价格低、科学管理、精益求精、持续改进、永续经营”之质量方针为准则，恪守“诚信务实，真诚服务”的经营理念，为客户提供完善周到的服务。产品可据客户特别要求能在不同地域及气候之环境下发挥效能。本公司深信凭着稳健、精诚合作之作风及不断进取之精神，确保客户能享受到稳定供应、质量保证及交期准时之最佳服务。
+                欢迎国内外的各大企业和客商致电、来函或亲临本司，本司的业务将为阁下提供理想的服务。<br/><br/><br/><br/>
+
+
+            <p><strong>联系方式</strong></p>
+            邮箱：13147046443@163.com
+            联系电话：18123692443
+            QQ：2238843007
+            </p>
+        </div>
+    </div>
+    <p><hr></p>
+</div>
+<div style="background-color:#f0f5f5" >
+
+    <div class="content" style="text-align: center"><br/>
+        版权所有 乐意硅橡胶有限公司 All Rights Reserved <br/>
+        技术支持:个人　你有任何建议请联系:13147046443@163.com <br/> <br/></div>
+</div>
+</body>
+</html>

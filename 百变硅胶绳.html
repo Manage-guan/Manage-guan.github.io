@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>乐意</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="script/bootstrap.min.css" rel="stylesheet">
+    <script src="script/jquery.min.js"></script>
+    <script src="script/bootstrap.min.js"></script>
+    <style class="text/css">
+        .dropdown-menu{
+            min-width: 100px;
+        }
+        .carousel-inner .item img,.img-responsive{width:900px;height:350px;border: 10px;}
+        .navbar-collapse{padding-left:180px; height:130px;}
+        .container>.navbar-collapse{margin-left: 60px;}
+        ul li:hover ul{ display:block;}
+
+        .navbar-inverse{background-color:#adadeb;border: none; color: white;font-weight: bolder;}
+        body{background-color: #eeeeee; background-size: cover; background-repeat: no-repeat;background-attachment: scroll;}
+
+        h3 {border-left:4px solid #7070db;margin-bottom: 0px;text-shadow:3px 3px #e5e5ff;font-weight: 700;height:26px; margin-top: 32px}
+        .sp{ margin-left:10px;font-size: 12px;}
+        .thumbnail>img{width: 200px;height: 260px}
+        .carousel-inner .item img{width: 1162px;}
+        .col-sm-3 {  width: 25%;margin-top: 5px;  }
+        .btn-group>.btn:first-child {  margin-left: 65px;  }
+        .sm{color: #5d5d5d;border-left: 1px solid #8585e0;margin-top: 0px;margin-left: 10px;}
+
+        .pt{width: 180px;height: 160px;}
+        .pagination{margin-top: 80px;}
+        .nav-pills>li>a{background-color: #ddccff;height: 30px;}
+        .dropdown-menu {  margin-left: 110px;  margin-top: -24px;  }
+        .row {  margin-top: -2px;  margin-left: -11px;  }
+        @media screen {  img{  width: 100%;  }  }
+        hr{border-top-color: #8585e0; margin-top: 70px;margin-bottom: 35px; border-top-width: 8px;}
+        .image-container {  width: 100%;  overflow: hidden;  }
+        .image-container img {  width: 100%;  }
+        p{margin: 0 0 0}
+        @-moz-document url-prefix() { fieldset { display: table-cell; } }
+
+
+    </style>
+    <script>
+        $('.dropdown-toggle').mouseleave(
+                function(){
+                    $('.dropdown-menu').slideUp();
+                });
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="image-container">
+            <img src="images/logo3.jpg"  style="max-width: 70%">
+        </div>
+    </div>
+</div>
+<nav class="navbar navbar-inverse" role="navigation">
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="container">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+        <ul class="nav navbar-nav">
+            <li><a class="navbar-brand" href="index.html" style="color: white">公司主页</a></li>
+            <li><a class="navbar-brand" href="关于我们.html" style="color: white">关于我们</a></li>
+            <li><a class="navbar-brand" href="secondary.html" style="color: white">产品展示</a></li>
+            <li><a class="navbar-brand" href="公司简介.html" style="color: white">公司简介</a></li>
+            <li><a class="navbar-brand" href="联系我们.html" style="color: white">联系我们</a></li>
+        </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+</nav>
+
+<div class="container" style="background-color: white">
+    <div class="row">
+        <div id="myCarousel" class="carousel slide">
+            <!-- 轮播（Carousel）指标 -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+            <!-- 轮播（Carousel）项目 -->
+
+            <div class="carousel-inner">
+                <div class="item">
+                    <img src="imgs/硅胶餐具/191.jpg" alt="First slide">
+                    <div class="carousel-caption">硅胶餐具</div>
+                </div>
+                <div class="item active">
+                    <img src="imgs/1.jpg"  alt="Third slide">
+                    <div class="carousel-caption">办公区域</div>
+                </div>
+                <div class="item">
+                    <img src="images/4.jpg" alt="Second slide">
+                    <div class="carousel-caption">硅胶条</div>
+                </div>
+                <div class="item">
+                    <img src="images/5.jpg" alt="Third slide">
+                    <div class="carousel-caption">车间环境</div>
+                </div>
+            </div>
+            <!-- 轮播（Carousel）导航 -->
+            <a class="carousel-control left" href="#myCarousel"
+               data-slide="prev">&lsaquo;</a>
+            <a class="carousel-control right" href="#myCarousel"
+               data-slide="next">&rsaquo;</a>
+        </div>
+        <div class="col-sm-3" style="background-color: #f5f5f0;height: 900px">
+            <h3 ><span style=" margin-left:10px; ">产品展示</span></h3>
+            <div class="row" style="margin-top: 16px; margin-left: -16px">
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="硅胶管.html">硅胶管</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="硅胶管简介.html" >30度硅胶管</a></li>
+                            <li><a href="硅胶管简介.html">LED硅胶套管</a></li>
+                            <li><a href="硅胶管简介.html">铂金硅胶管 </a></li>
+                            <li><a href="硅胶管简介.html" >彩色硅胶管</a></li>
+                            <li><a href="硅胶管简介.html">打蛋器硅胶管</a></li>
+                            <li><a href="硅胶管简介.html">大口径硅胶管 </a></li>
+                            <li><a href="硅胶管简介.html" >防腐蚀硅胶管</a></li>
+                            <li><a href="硅胶管简介.html">工业级硅胶管</a></li>
+                            <li><a href="硅胶管简介.html">进口硅胶管 </a></li>
+                            <li><a href="硅胶管简介.html" >咖啡壶硅胶管</a></li>
+                            <li><a href="硅胶管简介.html">奶瓶硅胶管</a></li>
+                            <li><a href="硅胶管简介.html">耐高温硅胶管 </a></li>
+                            <li><a href="硅胶管简介.html" >汽车硅胶管</a></li>
+                            <li><a href="硅胶管简介.html">L食品级硅胶管</a></li>
+                            <li><a href="硅胶管简介.html">医疗级硅胶管 </a></li>
+                            <li><a href="硅胶管简介.html" >异型度硅胶管</a></li>
+                            <li><a href="硅胶管简介.html">饮水机硅胶管</a></li>
+                            <li><a href="硅胶管简介.html">阻燃硅胶管 </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="硅胶编织管.html">硅胶编织管</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="硅胶编织管简介.html">波纤硅胶管</a></li>
+                            <li><a href="硅胶编织管简介.html">单层编织硅胶管</a></li>
+                            <li><a href="硅胶编织管简介.html">多层夹布硅胶管</a></li>
+                            <li><a href="硅胶编织管简介.html">钢丝夹布硅胶管</a></li>
+                            <li><a href="硅胶编织管简介.html">钢丝增强硅胶管</a></li>
+                            <li><a href="硅胶编织管简介.html">进口编织硅胶管</a></li>
+                            <li><a href="硅胶编织管简介.html">食品级钢丝硅胶管</a></li>
+                            <li><a href="硅胶编织管简介.html">双层编织硅胶管</a></li>
+                            <li><a href="硅胶编织管简介.html">双层钢丝硅胶管</a></li>
+                            <li><a href="硅胶编织管简介.html">双色夹布硅胶管</a></li>
+                            <li><a href="硅胶编织管简介.html">外编织硅胶管</a></li>
+                            <li><a href="硅胶编织管简介.html">网纹编织硅胶管</a></li>
+                            <li><a href="硅胶编织管简介.html">制药级钢丝硅胶管</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="缠绕管.html">缠绕管</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="缠绕管简介.html">电缆缠绕管</a></li>
+                            <li><a href="缠绕管简介.html">高透明绕线管</a></li>
+                            <li><a href="缠绕管简介.html">光纤缠绕管</a></li>
+                            <li><a href="缠绕管简介.html">光纤套管</a></li>
+                            <li><a href="缠绕管简介.html">硅胶缠绕管</a></li>
+                            <li><a href="缠绕管简介.html">硅胶螺旋管</a></li>
+                            <li><a href="缠绕管简介.html">硅胶蛇形管</a></li>
+                            <li><a href="缠绕管简介.html">进口硅胶缠绕管</a></li>
+                            <li><a href="缠绕管简介.html">线束缠绕管</a></li>
+                            <li><a href="缠绕管简介.html">阻燃硅胶缠绕管</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="硅胶板.html">硅胶板</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="硅胶板简介.html">薄层层析硅胶板</a></li>
+                            <li><a href="硅胶板简介.html">彩色硅胶板</a></li>
+                            <li><a href="硅胶板简介.html">超大宽幅硅胶板</a></li>
+                            <li><a href="硅胶板简介.html">防静电硅胶板</a></li>
+                            <li><a href="硅胶板简介.html">防震硅胶板</a></li>
+                            <li><a href="硅胶板简介.html">高抗撕硅胶板</a></li>
+                            <li><a href="硅胶板简介.html">工业硅胶板</a></li>
+                            <li><a href="硅胶板简介.html">红色硅胶板</a></li>
+                            <li><a href="硅胶板简介.html">环保硅胶板</a></li>
+                            <li><a href="硅胶板简介.html">进口硅胶板</a></li>
+                            <li><a href="硅胶板简介.html">磨砂硅胶板</a></li>
+                            <li><a href="硅胶板简介.html">耐高温硅胶板</a></li>
+                            <li><a href="硅胶板简介.html">耐酸碱硅胶板</a></li>
+                            <li><a href="硅胶板简介.html">食品级硅胶板</a></li>
+                            <li><a href="硅胶板简介.html">太阳能硅胶板</a></li>
+                            <li><a href="硅胶板简介.html">透明硅胶板</a></li>
+                            <li><a href="硅胶板简介.html">网格硅胶板</a></li>
+                            <li><a href="硅胶板简介.html">无味硅胶板</a></li>
+                            <li><a href="硅胶板简介.html">真空覆膜机硅胶板</a></li>
+                            <li><a href="硅胶板简介.html">正负压机硅胶板</a></li>
+                            <li><a href="硅胶板简介.html">阻燃硅胶板</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="硅胶片.html">硅胶片</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="硅胶片简介.html">彩色硅胶片</a></li>
+                            <li><a href="硅胶片简介.html">超薄硅胶片</a></li>
+                            <li><a href="硅胶片简介.html">导热硅胶片</a></li>
+                            <li><a href="硅胶片简介.html">防火硅胶皮</a></li>
+                            <li><a href="硅胶片简介.html">防静电硅胶皮</a></li>
+                            <li><a href="硅胶片简介.html">覆膜硅胶片</a></li>
+                            <li><a href="硅胶片简介.html">高透明硅胶片</a></li>
+                            <li><a href="硅胶片简介.html">高温硅胶片</a></li>
+                            <li><a href="硅胶片简介.html">黑色硅胶片</a></li>
+                            <li><a href="硅胶片简介.html">密封硅胶片</a></li>
+                            <li><a href="硅胶片简介.html">磨砂硅胶片</a></li>
+                            <li><a href="硅胶片简介.html">热压硅胶皮</a></li>
+                            <li><a href="硅胶片简介.html">散热硅胶片</a></li>
+                            <li><a href="硅胶片简介.html">晒纹硅胶片</a></li>
+                            <li><a href="硅胶片简介.html">食品级硅胶片</a></li>
+                            <li><a href="硅胶片简介.html">哑光硅胶片</a></li>
+                            <li><a href="硅胶片简介.html">阻燃硅胶片</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="硅胶垫.html">硅胶垫</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="硅胶垫简介.html">3M硅胶垫</a></li>
+                            <li><a href="硅胶垫简介.html">背胶硅胶垫</a></li>
+                            <li><a href="硅胶垫简介.html">玻璃硅胶垫</a></li>
+                            <li><a href="硅胶垫简介.html">导热硅胶垫</a></li>
+                            <li><a href="硅胶垫简介.html">方形硅胶垫</a></li>
+                            <li><a href="硅胶垫简介.html">防滑硅胶垫</a></li>
+                            <li><a href="硅胶垫简介.html">防水硅胶垫</a></li>
+                            <li><a href="硅胶垫简介.html">隔热硅胶垫</a></li>
+                            <li><a href="硅胶垫简介.html">硅胶垫</a></li>
+                            <li><a href="硅胶垫简介.html">卡通硅胶垫</a></li>
+                            <li><a href="硅胶垫简介.html">耐高温硅胶垫</a></li>
+                            <li><a href="硅胶垫简介.html">平面硅胶垫</a></li>
+                            <li><a href="硅胶垫简介.html">鼠标硅胶垫</a></li>
+                            <li><a href="硅胶垫简介.html">透明脚垫</a></li>
+                            <li><a href="硅胶垫简介.html">圆形硅胶垫</a></li>
+                            <li><a href="硅胶垫简介.html">粘性硅胶垫</a></li>
+                            <li><a href="硅胶垫简介.html">阻燃硅胶垫</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="硅胶密封.html">硅胶密封</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="硅胶密封简介.html">O型圈</a></li>
+                            <li><a href="硅胶密封简介.html">半透明密封圈</a></li>
+                            <li><a href="硅胶密封简介.html">保温盒密封圈</a></li>
+                            <li><a href="硅胶密封简介.html">发泡密封圈</a></li>
+                            <li><a href="硅胶密封简介.html">饭盒密封圈</a></li>
+                            <li><a href="硅胶密封简介.html">方形密封圈</a></li>
+                            <li><a href="硅胶密封简介.html">防水密封圈</a></li>
+                            <li><a href="硅胶密封简介.html">高温密封圈</a></li>
+                            <li><a href="硅胶密封简介.html">半透明密封圈</a></li>
+                            <li><a href="硅胶密封简介.html">高压锅密封圈</a></li>
+                            <li><a href="硅胶密封简介.html">工业烘箱密封圈</a></li>
+                            <li><a href="硅胶密封简介.html">硅胶日字管</a></li>
+                            <li><a href="硅胶密封简介.html">酒瓶塞密封圈</a></li>
+                            <li><a href="硅胶密封简介.html">食品级密封圈</a></li>
+                            <li><a href="硅胶密封简介.html">水杯密封圈</a></li>
+                            <li><a href="硅胶密封简介.html">糖果盒密封圈</a></li>
+                            <li><a href="硅胶密封简介.html">真空干燥箱密封圈</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="硅胶条.html">硅胶条</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="硅胶条简介.html">硅胶9字条</a></li>
+                            <li><a href="硅胶条简介.html">硅胶D型条</a></li>
+                            <li><a href="硅胶条简介.html">硅胶E型条</a></li>
+                            <li><a href="硅胶条简介.html">硅胶包边条</a></li>
+                            <li><a href="硅胶条简介.html">硅胶扁条</a></li>
+                            <li><a href="硅胶条简介.html">硅胶发泡条</a></li>
+                            <li><a href="硅胶条简介.html">硅胶方条</a></li>
+                            <li><a href="硅胶条简介.html">硅胶方形条</a></li>
+                            <li><a href="硅胶条简介.html">硅胶固封条</a></li>
+                            <li><a href="硅胶条简介.html">硅胶密封条</a></li>
+                            <li><a href="硅胶条简介.html">硅胶实心条</a></li>
+                            <li><a href="硅胶条简介.html">硅胶异型条</a></li>
+                            <li><a href="硅胶条简介.html">进口硅胶条</a></li>
+                            <li><a href="硅胶条简介.html">卡边保护条</a></li>
+                            <li><a href="硅胶条简介.html">耐磨防水条</a></li>
+                            <li><a href="硅胶条简介.html">阻燃硅胶条</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="硅胶发泡.html">硅胶发泡</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="硅胶发泡简介.html">背胶发泡条</a></li>
+                            <li><a href="硅胶发泡简介.html">超软硅胶发泡板</a></li>
+                            <li><a href="硅胶发泡简介.html">低密度硅胶发泡板</a></li>
+                            <li><a href="硅胶发泡简介.html">发泡方形条</a></li>
+                            <li><a href="硅胶发泡简介.html">发泡密封条</a></li>
+                            <li><a href="硅胶发泡简介.html">发泡实心条</a></li>
+                            <li><a href="硅胶发泡简介.html">高温发泡板</a></li>
+                            <li><a href="硅胶发泡简介.html">光面发泡板</a></li>
+                            <li><a href="硅胶发泡简介.html">硅胶发泡条</a></li>
+                            <li><a href="硅胶发泡简介.html">海绵发泡硅胶板</a></li>
+                            <li><a href="硅胶发泡简介.html">海绵硅胶发泡管</a></li>
+                            <li><a href="硅胶发泡简介.html">红色硅胶发泡板</a></li>
+                            <li><a href="硅胶发泡简介.html">耐高温硅胶发泡板</a></li>
+                            <li><a href="硅胶发泡简介.html">网格发泡硅胶板</a></li>
+                            <li><a href="硅胶发泡简介.html">无毒硅胶发泡管</a></li>
+                            <li><a href="硅胶发泡简介.html">异型发泡管</a></li>
+                            <li><a href="硅胶发泡简介.html">异型发泡条</a></li>
+                            <li><a href="硅胶发泡简介.html">圆形发泡条</a></li>
+                            <li><a href="硅胶发泡简介.html">阻燃硅胶发泡板</a></li>
+                            <li><a href="硅胶发泡简介.html">阻燃硅胶发泡管</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="硅胶饰品.html">硅胶饰品</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="硅胶饰品简介.html">爱心硅胶手环</a></li>
+                            <li><a href="硅胶饰品简介.html">硅胶表带</a></li>
+                            <li><a href="硅胶饰品简介.html">硅胶零钱包</a></li>
+                            <li><a href="硅胶饰品简介.html">硅胶拍拍带</a></li>
+                            <li><a href="硅胶饰品简介.html">硅胶拍拍圈</a></li>
+                            <li><a href="硅胶饰品简介.html">进口编织硅胶管</a></li>
+                            <li><a href="硅胶饰品简介.html">硅胶手表</a></li>
+                            <li><a href="硅胶饰品简介.html">卡通硅胶钱包</a></li>
+                            <li><a href="硅胶饰品简介.html">卡通硅胶手环</a></li>
+                            <li><a href="硅胶饰品简介.html">能量硅胶手环</a></li>
+                            <li><a href="硅胶饰品简介.html">驱蚊儿童硅胶手环</a></li>
+                            <li><a href="硅胶饰品简介.html">夜光硅胶手环</a></li>
+                            <li><a href="硅胶饰品简介.html">运动硅胶手环</a></li>
+                            <li><a href="硅胶饰品简介.html">智能硅胶手表</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="百变硅胶绳.html">百变硅胶绳</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="百变硅胶绳简介.html">百变捆绑绳</a></li>
+                            <li><a href="百变硅胶绳简介.html">百变收纳绳</a></li>
+                            <li><a href="百变硅胶绳简介.html">百变扎绳</a></li>
+                            <li><a href="百变硅胶绳简介.html">多功能绑线绳</a></li>
+                            <li><a href="百变硅胶绳简介.html">多功能收纳绳</a></li>
+                            <li><a href="百变硅胶绳简介.html">耳机扎线</a></li>
+                            <li><a href="百变硅胶绳简介.html">收纳扎带</a></li>
+                            <li><a href="百变硅胶绳简介.html">手机支架绳</a></li>
+                            <li><a href="百变硅胶绳简介.html">数据线扎带</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="烫金产品.html">烫金产品</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="烫金产品简介.html">包胶辊</a></li>
+                            <li><a href="烫金产品简介.html">覆膜机硅胶辊</a></li>
+                            <li><a href="烫金产品简介.html">硅胶辊</a></li>
+                            <li><a href="烫金产品简介.html">硅胶辊包胶</a></li>
+                            <li><a href="烫金产品简介.html">硅胶辊筒</a></li>
+                            <li><a href="烫金产品简介.html">硅胶轮</a></li>
+                            <li><a href="烫金产品简介.html">硅胶铝板</a></li>
+                            <li><a href="烫金产品简介.html">硅胶烫金板</a></li>
+                            <li><a href="烫金产品简介.html">硅胶烫金辊</a></li>
+                            <li><a href="烫金产品简介.html">弧面烫金硅胶板</a></li>
+                            <li><a href="烫金产品简介.html">胶轮</a></li>
+                            <li><a href="烫金产品简介.html">抗静电硅胶辊</a></li>
+                            <li><a href="烫金产品简介.html">耐高温硅胶辊</a></li>
+                            <li><a href="烫金产品简介.html">耐高温烫金板</a></li>
+                            <li><a href="烫金产品简介.html">热转印硅胶板</a></li>
+                            <li><a href="烫金产品简介.html">热转印硅胶辊</a></li>
+                            <li><a href="烫金产品简介.html">热转印烫金板</a></li>
+                            <li><a href="烫金产品简介.html">热转印烫金硅胶轮</a></li>
+                            <li><a href="烫金产品简介.html">热转印烫金辊</a></li>
+                            <li><a href="烫金产品简介.html">烫金硅胶板</a></li>
+                            <li><a href="烫金产品简介.html">烫金辊</a></li>
+                            <li><a href="烫金产品简介.html">烫金轮</a></li>
+                            <li><a href="烫金产品简介.html">铁芯包胶轮</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="硅胶文胸.html">硅胶文胸</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="硅胶文胸简介.html">硅胶假肚</a></li>
+                            <li><a href="硅胶文胸简介.html">硅胶连体义乳</a></li>
+                            <li><a href="硅胶文胸简介.html">硅胶螺纹义乳</a></li>
+                            <li><a href="硅胶文胸简介.html">硅胶三角义乳</a></li>
+                            <li><a href="硅胶文胸简介.html">硅胶水滴型义乳</a></li>
+                            <li><a href="硅胶文胸简介.html">硅胶臀垫</a></li>
+                            <li><a href="硅胶文胸简介.html">硅胶圆形义乳</a></li>
+                            <li><a href="硅胶文胸简介.html">加厚款硅胶文胸</a></li>
+                            <li><a href="硅胶文胸简介.html">文胸硅胶垫</a></li>
+                            <li><a href="硅胶文胸简介.html">隐形硅胶文胸</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="硅胶餐具.html">硅胶餐具</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="硅胶餐具简介.html">蛋糕硅胶模</a></li>
+                            <li><a href="硅胶餐具简介.html">硅胶杯</a></li>
+                            <li><a href="硅胶餐具简介.html">硅胶杯盖</a></li>
+                            <li><a href="硅胶餐具简介.html">硅胶冰块模</a></li>
+                            <li><a href="硅胶餐具简介.html">硅胶菜篮</a></li>
+                            <li><a href="硅胶餐具简介.html">硅胶餐垫</a></li>
+                            <li><a href="硅胶餐具简介.html">硅胶打蛋器</a></li>
+                            <li><a href="硅胶餐具简介.html">硅胶盒子</a></li>
+                            <li><a href="硅胶餐具简介.html">硅胶筷子</a></li>
+                            <li><a href="硅胶餐具简介.html">硅胶勺子</a></li>
+                            <li><a href="硅胶餐具简介.html">硅胶刷</a></li>
+                            <li><a href="硅胶餐具简介.html">硅胶碗</a></li>
+                            <li><a href="硅胶餐具简介.html">烤箱隔热手套</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="col-sm-9">
+            <h3 ><span style=" margin-left:10px; ">乐意硅橡胶有限公司</span>
+                <span class="sp" style=" margin-left: 280px">当前位置：<a class="sm" href="index.html" style="color: #5d5d5d">公司首页</a></span>
+                <span class="sp"><a class="sm" href="secondary.html">产品展示</a></span>
+                <span class="sp"><a class="sm" href="百变硅胶绳.html">百变硅胶绳</a></span>
+            </h3><br/>
+            <div class="row">
+                <div class="row" style="margin-top: 16px">
+                    <div class="col-sm-9 col-lg-3 col-md-3">
+                        <img class="pt"  src="images/百变绳/百变绳/多功能收纳线/15.jpg" alt="...">
+                        <div class="caption"><p><a href="百变硅胶绳简介.html" class="btn btn-default" role="button">多功能收纳线</a></p></div>
+                    </div>
+                    <div class="col-sm-9 col-lg-3 col-md-3">
+                        <img class="pt"  src="images/百变绳/百变绳/多功能绑线绳/19.jpg" alt="...">
+                        <div class="caption"><p><a href="百变硅胶绳简介.html" class="btn btn-default" role="button">多功能绑线绳</a></p></div>
+                    </div>
+                    <div class="col-sm-9 col-lg-3 col-md-3">
+                        <img class="pt"  src="images/百变绳/百变绳/手机支架绳/016.jpg" alt="...">
+                        <div class="caption"><p><a href="百变硅胶绳简介.html" class="btn btn-default" role="button">手机支架绳</a></p></div>
+                    </div>
+                    <div class="col-sm-9 col-lg-3 col-md-3">
+                        <img class="pt"  src="images/百变绳/百变绳/收纳扎带/18.jpg" alt="...">
+                        <div class="caption"><p><a href="百变硅胶绳简介.html" class="btn btn-default" role="button">收纳扎带</a></p></div>
+                    </div>
+
+                </div>
+                <div class="row" style="margin-top: 16px">
+                    <div class="col-sm-9 col-lg-3 col-md-3">
+                        <img class="pt"  src="images/百变绳/百变绳/数据线扎带/222.jpg" alt="...">
+                        <div class="caption"><p><a href="百变硅胶绳简介.html" class="btn btn-default" role="button">数据线扎带</a></p></div>
+                    </div>
+                    <div class="col-sm-9 col-lg-3 col-md-3">
+                        <img class="pt"  src="images/百变绳/百变绳/百变扎绳/12.jpg" alt="...">
+                        <div class="caption"><p><a href="百变硅胶绳简介.html" class="btn btn-default" role="button">百变扎绳</a></p></div>
+                    </div>
+                    <div class="col-sm-9 col-lg-3 col-md-3">
+                        <img class="pt"  src="images/百变绳/百变绳/百变捆绑绳/1.jpg" alt="...">
+                        <div class="caption"><p><a href="百变硅胶绳简介.html" class="btn btn-default" role="button">百变捆绑绳</a></p></div>
+                    </div>
+                    <div class="col-sm-9 col-lg-3 col-md-3">
+                        <img class="pt"  src="images/百变绳/百变绳/百变收纳绳/03.jpg" alt="...">
+                        <div class="caption"><p><a href="百变硅胶绳简介.html" class="btn btn-default" role="button">百变收纳绳</a></p></div>
+                    </div>
+
+                </div>
+                <div class="row" style="margin-top: 16px">
+                    <div class="col-sm-9 col-lg-3 col-md-3">
+                        <img class="pt"  src="images/百变绳/百变绳/耳机扎线/29.jpg" alt="...">
+                        <div class="caption"><p><a href="百变硅胶绳简介.html" class="btn btn-default" role="button">耳机扎线</a></p></div>
+                    </div>
+
+                </div>
+                <nav style="text-align: center">
+                    <ul class="pagination">
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li><a href="硅胶管.html">1</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div style="background-color:#f0f5f5" >
+
+    <div class="content" style="text-align: center"><br/>
+        版权所有 乐意硅橡胶有限公司 All Rights Reserved <br/>
+        技术支持:个人　你有任何建议请联系:13147046443@163.com <br/> <br/></div>
+</div>
+</body>
+</html>
